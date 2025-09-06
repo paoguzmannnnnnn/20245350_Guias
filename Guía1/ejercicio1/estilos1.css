@@ -1,0 +1,33 @@
+/* Estilos de fuente para ejemplo 1*/
+
+body{
+    background-color: lightblue;
+}
+
+div {
+    font-size: 20px;
+
+}
+
+.main-title{
+    text-decoration: underline; 
+    color: white;
+}
+
+.parrafo1{
+    color: navy; 
+    font-weight: bold
+}
+
+.parrafo2{
+    text-transform: uppercase; 
+    text-align: justify
+}
+
+.parrafo3{
+    font-size: 12px
+}
+
+.italic {
+    font-style: italic;
+}
