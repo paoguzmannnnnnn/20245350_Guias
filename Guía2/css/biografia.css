@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+body{
+  background-color: rgba(186, 212, 212, 0.7);
+  background-image: url(../img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size:cover ;
+
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+header{
+  background-color: rgba(133, 198, 222, 0.921);
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #2a4d69;
+}
+
+header h2{
+  font-size: 1.2rem;
+  color: #4f5d75;
+  margin-top: 5px;
+}
+
+header nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 15px;
+}
+
+header nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #e75480;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #b8336a;
+}
+
+h3{
+ color: #e75480;
+}
+section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #ffffffc5;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+article {
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #76c2f25d;
+  border-radius: 8px;
+}
+
+section article p:first-of-type::first-letter {
+  font-size: 1.2rem;
+  color: #e75480;
+  font-weight:lighter;
+}
+
+.fotos {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap; /* Para que sea responsive */
+  margin-top: 15px;      
+}
+
+.fotos img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover; /* recorta bien sin deformar */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.fotos img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  margin: 30px 0 10px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #e75480c1;
+  
+  
+}
+
+ul li:first-child {
+  font-weight:600; 
+}
+
+a[href^="#"] {
+  text-decoration: underline dotted; /* Selector de atributo */
+}
