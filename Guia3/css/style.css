@@ -1,0 +1,109 @@
+
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Muli', sans-serif;
+    text-align: justify;
+}
+
+header{
+    background: #16A085;
+    height: 130px;
+    overflow: hidden;
+}
+
+footer{
+    margin-top: 20px;
+    background: #16A085;
+    height: 50px;
+}
+
+header div, footer div{
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+h1{
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+
+}
+
+h2{
+    font-size: 2rem;
+}
+
+section{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+}
+
+section article{
+    font-size: 0.9rem;
+    height: 340px;
+    width: 32.33%;
+    margin: 0.5%;
+    border: 2px dashed #16A085;
+    padding: 1%;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+
+section article img{
+    height: 180px;
+    max-width: 80%;
+    margin: 5px auto;
+    display: block;
+}
+
+section article h3{
+    text-align: center;
+}
+
+footer div{
+    padding-top: 1rem;
+}
+
+section article:nth-child(2){
+    background-color: rgba(70,130,180,0.9);
+    position: static;
+    left: 100px;
+    top:50px;
+    display: none;
+}
+
+/*
+A partir de los resultados obtenidos, responda ¿Cuál es la diferencia entre ocultar los elementos
+ocupando display: none y visibility: hidden?
+
+visibility hidden lo oculta pero respetan su lugar, 
+mientras que display none lo oculta y tambien quita su lugar,
+los demas cuadros utilizan su lugar
+
+*/
+
+/*
+A partir del comportamiento visto, explique ¿Cuáles son las diferencias entre el
+posicionamiento relativo y absoluto?
+
+Relativo: elemento se mueve respecto su posicion inicial pero
+sigue ocupando espacio en el flujo
+
+Absoluto: el elemento se mueve respecto al contenedor posicionado
+mas cercano y no ocupa espacio en el flujo, los demas actulan como
+que si no existiera
+
+*/
+
