@@ -15,12 +15,22 @@ header{
     background: #16A085;
     height: 130px;
     overflow: hidden;
+    Position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 footer{
     margin-top: 20px;
     background: #16A085;
     height: 50px;
+    position: fixed;   
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 header div, footer div{
@@ -41,7 +51,7 @@ h2{
 }
 
 section{
-    margin: 0 auto;
+    margin: 140px auto 60px auto;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
