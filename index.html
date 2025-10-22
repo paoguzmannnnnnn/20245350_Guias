@@ -3,150 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indice ejercicios guia 1</title>
-    <link 
-    href="https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <style>
-        body{
-            background-color: rgb(233, 186, 194);
-        }
-
-        #title{
-            font-family: "Spectral SC", serif;
-            font-weight: 500;
-            font-style: normal;
-            text-align: center;
-        }
-
-        #subtitle {
-            font-family: Verdana;
-            font-size: 20px;
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        #subtitle2 {
-            font-family: sans-serif;
-            font-size: 15px;
-            font-weight: bold;
-        }
-
-        .exercise-name{
-            font-family: Segoe UI;
-            font-size: 14px;
-            
-        }
-
-        a{
-            font-family: Segoe UI;
-            font-size: 14px;
-            color: rgb(255, 67, 189);
-            font-weight: bold;
-            text-decoration: none;
-            
-        }
-
-        a:hover{
-            font-family: Segoe UI;
-            font-size: 14px;
-            color: rgb(213, 17, 145);
-            font-weight: bold;
-            text-decoration:underline;
-            
-        }
-
-        .bold{
-            font-weight: bold;
-            color: rgb(80, 78, 78);
-        }
-
-
-    </style>
+    <title>Portafolio Estudiantil - Paola Michelle Guzmán Mendoza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portafolio.css">
 </head>
 <body>
-    <header>
-        <h1 id="title">Indice de guías</h1>
-        <h2 id="subtitle">Alumna: Paola Michelle Guzman Mendoza 20245350</h2>
+    <header class="header">
+        <div class="container">
+            <h1 class="title">Portafolio Estudiantil</h1>
+            <h2 class="subtitle">Desarrollo Web I - Ciclo 03-2025</h2>
+        </div>
     </header>
 
-    <h3 id="subtitle2">Guía 1 </h3>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#datos-personales">Datos Personales</a></li>
+                <li><a href="#materia">Acerca de la Materia</a></li>
+                <li><a href="#guias">Guías de Ejercicios</a></li>
+                <li><a href="#foda">FODA</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <div>
-        <ul>
-            <p class="exercise-name"><span class="bold">Ejercicio 1:</span> Usando estilos CSS embebidos en las etiquetas HTML.</p>
-            <li>
-                <a href="Guía1\ejercicio1\estilos_embebidos.html"  target="_blank">Ejercicio1</a>
-            </li>
-            <br>
-            <p class="exercise-name"><span class="bold">Ejercicio 2:</span> Incluyendo reglas css mediante la etiqueta style.</p>
-            <li>
-                <a href="Guía1\ejercicio2\ejemplo2.html" target="_blank">Ejercicio2</a>
-            </li>
-            <br>
-            <p class="exercise-name"><span class="bold" target="_blank">Ejercicio3:</span> Usando reglas CSS definidas en archivos externos</p>
-            <li>
-                <a href="Guía1\ejercicio3\paises.html" target="_blank">Ejercicio3</a>
-            </li>
-            <br>
-            <p class="exercise-name"> <span class="bold">Ejercicio4:</span> Página web de programa favorito</p>
-            <li>
-                <a href="Guía1\ejercicio4\programa-favorito.html" target="_blank">Ejercicio4</a>
-            </li>
-            <br>
-            
-        </ul>
-    </div>
+    <main class="main-content">
+        <div class="container">
+            <section id="datos-personales" class="section">
+                <h2 class="section-title">Datos Personales</h2>
+                <div class="personal-info">
+                    <div class="info-card">
+                        <h3>Información Estudiantil</h3>
+                        <p><strong>Nombre:</strong> Paola Michelle Guzmán Mendoza</p>
+                        <p><strong>Carnet:</strong> 20245350</p>
+                        <p><strong>Carrera:</strong> Ingeniería de Software y Negocios Digitales</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Biografía</h3>
+                        <p>Soy estudiante de Ingeniería en Software, apasionada por la tecnología,
+                        la programación y la ciberseguridad. Me destaco por mi responsabilidad, 
+                        independencia y constancia, tanto en mi formación académica como en mis
+                        proyectos personales. Mi propósito es crecer profesionalmente en el 
+                        ámbito del software y, al mismo tiempo, contribuir a causas sociales
+                        que me motivan, como la protección de los animales de la calle.</p>
+                    </div>
+                </div>
+            </section>
 
-    <h3 id="subtitle2">Guía 2 </h3>
+            <section id="materia" class="section">
+                <h2 class="section-title">Acerca de la Materia</h2>
+                <div class="materia-content">
+                    <div class="materia-card">
+                        <h3>Descripción del Curso</h3>
+                        <p>Desarrollo Web I es una materia fundamental del ciclo 3 en la ESEN que introduce a los estudiantes 
+                           en los conceptos básicos del desarrollo web front-end junto con JavaScript</p>
+                    </div>
+                    <div class="materia-card">
+                        <h3>Contenido del curso</h3>
+                        <ul>
+                            <li>Introduccion al HTML</li>
+                            <li>Introduccion a las hojas de estilo en cascada (CSS)</li>
+                            <li>Maquetacion de sitios web</li>
+                            <li>Frameworks de diseño web responsivo</li>
+                            <li>Introducción a Javascript</li>
+                            <li>El modelo de objetos de documento (DOM) y javascript asincrono</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-    <div>
-        <ul>
-            <p class="exercise-name"><span class="bold">Ejercicio 1:</span>  Usando selectores CSS avanzados</p>
-            <li>
-                <a href="Guía2\pelicula.html"  target="_blank">Ejercicio1</a>
-            </li>
-            <br>
-            <p class="exercise-name"><span class="bold">Ejercicio 2:</span> Diseñando un tablero para damas con la pseudo-clase :nth-child()</p>
-            <li>
-                <a href="Guía2/tablero.html" target="_blank">Ejercicio2</a>
-            </li>
-            <br>
-            <p class="exercise-name"><span class="bold" target="_blank">Ejercicio3:</span> Página web con biografía.</p>
-            <li>
-                <a href="Guía2/biografia.html" target="_blank">Ejercicio3</a>
-            </li>
-            <br>
-            
-        </ul>
-    </div>
+            <section id="guias" class="section">
+                <h2 class="section-title">Guías de Ejercicios</h2>
+                
+                <div class="guia-card">
+                    <h3 class="guia-title">Guía 1: Introducción a CSS</h3>
+                    <p class="guia-desc">Fundamentos de estilos CSS: embebidos, internos y externos.</p>
+                    <div class="ejercicios-grid">
+                        <div class="ejercicio-item">
+                            <h4>Ejercicio 1: Estilos Embebidos</h4>
+                            <p>Uso de estilos CSS directamente en las etiquetas HTML.</p>
+                            <a href="Guía1/ejercicio1/estilos_embebidos.html" target="_blank" class="btn-ejercicio">Ver Ejercicio</a>
+                        </div>
+                        <div class="ejercicio-item">
+                            <h4>Ejercicio 2: Etiqueta Style</h4>
+                            <p>Inclusión de reglas CSS mediante la etiqueta &lt;style&gt;.</p>
+                            <a href="Guía1/ejercicio2/ejemplo2.html" target="_blank" class="btn-ejercicio">Ver Ejercicio</a>
+                        </div>
+                        <div class="ejercicio-item">
+                            <h4>Ejercicio 3: CSS Externo</h4>
+                            <p>Uso de reglas CSS definidas en archivos externos.</p>
+                            <a href="Guía1/ejercicio3/paises.html" target="_blank" class="btn-ejercicio">Ver Ejercicio</a>
+                        </div>
+                        <div class="ejercicio-item">
+                            <h4>Ejercicio 4: Página Web</h4>
+                            <p>Creación de página web sobre programa favorito.</p>
+                            <a href="Guía1/ejercicio4/programa-favorito.html" target="_blank" class="btn-ejercicio">Ver Ejercicio</a>
+                        </div>
+                    </div>
+                </div>
 
-    <h3 id="subtitle2">Guía 3 </h3>
+                <div class="guia-card">
+                    <h3 class="guia-title">Guía 2: Selectores CSS Avanzados</h3>
+                    <p class="guia-desc">Selectores avanzados, pseudo-clases y diseño de layouts.</p>
+                    <div class="ejercicios-grid">
+                        <div class="ejercicio-item">
+                            <h4>Ejercicio 1: Selectores CSS</h4>
+                            <p>Aplicación de selectores CSS avanzados.</p>
+                            <a href="Guía2/pelicula.html" target="_blank" class="btn-ejercicio">Ver Ejercicio</a>
+                        </div>
+                        <div class="ejercicio-item">
+                            <h4>Ejercicio 2: Tablero de Damas</h4>
+                            <p>Diseño de tablero usando :nth-child().</p>
+                            <a href="Guía2/tablero.html" target="_blank" class="btn-ejercicio">Ver Ejercicio</a>
+                        </div>
+                        <div class="ejercicio-item">
+                            <h4>Ejercicio 3: Biografía</h4>
+                            <p>Página web con biografía personal.</p>
+                            <a href="Guía2/biografia.html" target="_blank" class="btn-ejercicio">Ver Ejercicio</a>
+                        </div>
+                    </div>
+                </div>
 
-    <div>
-        <ul>
-            <p class="exercise-name"><span class="bold">Ejercicio 1:</span>  Usando posicionamiento y visualización</p>
-            <li>
-                <a href="Guia3/oscares.html"  target="_blank">Ejercicio1</a>
-            </li>
-            <br>
-            <p class="exercise-name"><span class="bold">Ejercicio 2:</span> . Diseñando un menú horizontal multinivel</p>
-            <li>
-                <a href="Guia3/menu_horizontal.html" target="_blank">Ejercicio2</a>
-            </li>
-            <br>
-            <p class="exercise-name"><span class="bold" target="_blank">Ejercicio3:</span> Construyendo un diseño fijo</p>
-            <li>
-                <a href="Guia3/index.html" target="_blank">Ejercicio3</a>
-            </li>
-            <br>
-            <p class="exercise-name"><span class="bold" target="_blank">Ejercicio4:</span> Usando posicionamiento y Z-index</p>
-            <li>
-                <a href="Guia3/analisis.html" target="_blank">Ejercicio4</a>
-            </li>
-            <br>
-            
-        </ul>
-    </div>
-    
+                <div class="guia-card">
+                    <h3 class="guia-title">Guía 3: Posicionamiento y Layout</h3>
+                    <p class="guia-desc">Posicionamiento, menús y diseños fijos.</p>
+                    <div class="ejercicios-grid">
+                        <div class="ejercicio-item">
+                            <h4>Ejercicio 1: Posicionamiento</h4>
+                            <p>Uso de posicionamiento y visualización.</p>
+                            <a href="Guia3/oscares.html" target="_blank" class="btn-ejercicio">Ver Ejercicio</a>
+                        </div>
+                        <div class="ejercicio-item">
+                            <h4>Ejercicio 2: Menú Horizontal</h4>
+                            <p>Diseño de menú horizontal multinivel.</p>
+                            <a href="Guia3/menu_horizontal.html" target="_blank" class="btn-ejercicio">Ver Ejercicio</a>
+                        </div>
+                        <div class="ejercicio-item">
+                            <h4>Ejercicio 3: Diseño Fijo</h4>
+                            <p>Construcción de diseño fijo.</p>
+                            <a href="Guia3/index.html" target="_blank" class="btn-ejercicio">Ver Ejercicio</a>
+                        </div>
+                        <div class="ejercicio-item">
+                            <h4>Ejercicio 4: Z-index</h4>
+                            <p>Uso de posicionamiento y Z-index.</p>
+                            <a href="Guia3/analisis.html" target="_blank" class="btn-ejercicio">Ver Ejercicio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="guia-card">
+                    <h3 class="guia-title">Guía 4: Diseño Responsive</h3>
+                    <p class="guia-desc">Media Queries y layouts responsivos.</p>
+                    <div class="ejercicios-grid">
+                        <div class="ejercicio-item">
+                            <h4>Ejercicio 1: Media Queries</h4>
+                            <p>Utilización de media queries.</p>
+                            <a href="Guia4/mediaqueries.html" target="_blank" class="btn-ejercicio">Ver Ejercicio</a>
+                        </div>
+                        <div class="ejercicio-item">
+                            <h4>Ejercicio 2: Layout Responsivo</h4>
+                            <p>Construcción de layout responsivo.</p>
+                            <a href="Guia4/index.html" target="_blank" class="btn-ejercicio">Ver Ejercicio</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="foda" class="section">
+                <h2 class="section-title">FODA sobre el Desempeño</h2>
+                <div class="foda-grid">
+                    <div class="foda-item fortalezas">
+                        <h3>Fortalezas</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint sunt quidem, molestias dolor necessitatibus illo aliquam nam eaque temporibus provident reprehenderit rem fugiat ducimus fuga deleniti facere ex nulla hic.</p>
+                    </div>
+                    <div class="foda-item oportunidades">
+                        <h3>Oportunidades</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, repellendus.</p>
+                    </div>
+                    <div class="foda-item debilidades">
+                        <h3>Debilidades</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, quasi?</p>
+                    </div>
+                    <div class="foda-item amenazas">
+                        <h3>Amenazas</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, itaque?</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Paola Michelle Guzmán Mendoza </p>
+            <p>Escuela Superior de Economía y Negocios</p>
+        </div>
+    </footer>
 </body>
 </html>
