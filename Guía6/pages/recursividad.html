@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/stylesFunciones.css" rel="stylesheet" />
+    <link rel="icon" href="../img/js.png" sizes="32x32" type="image/png" />
+    <title>Número factorial</title>
+</head>
+
+<body>
+    <header>
+        <div class="px-3 py-2 text-bg-dark fixed-top">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="../indexFunciones.html"
+                        class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                        <img src="../img/js.png" alt="" width="32" height="32" class="me-2" />
+                    </a>
+
+                    <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small nav-bar">
+                        <li class="text-center nav-bar-li-active">
+                            <a href="recursividad.html" class="nav-link text-white">
+                                <i class="bi bi-arrow-clockwise bi-2 d-block"></i>
+                                Recursividad
+                            </a>
+                        </li>
+                        <li class="text-center">
+                            <a href="tabla.html" class="nav-link text-white">
+                                <i class="bi bi-table bi-2 d-block"></i>
+                                Creando una Tabla
+                            </a>
+                        </li>
+                        <li class="text-center">
+                            <a href="formulario.html" class="nav-link text-white">
+                                <i class="bi bi-ui-checks bi-2 d-block"></i>
+                                Formulario
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-lg">
+        <div class="container-fluid py-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="h-100 p-4 bg-light border rounded-3">
+                        <h3>Calculando el factorial de un número</h3>
+                        <form onsubmit="return false">
+                            <div class="row mb-3">
+                                <label for="idTxtNumero" class="col-sm-3 col-form-label">Ingrese un número</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="idTxtNumero" maxlength="2" />
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-success" id="idBtnCalcular">
+                                <i class="bi bi-calculator" height="16" width="16"></i>
+                                Calcular
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 py-5">
+                <div id="idDivResultado"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/recursividad.js" defer></script>
+</body>
+
+</html>
