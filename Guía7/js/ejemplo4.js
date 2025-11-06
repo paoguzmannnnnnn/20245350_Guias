@@ -1,22 +1,21 @@
-
 const buttonAgregarPagina = document.querySelector("#idAgregarPagina");
-const buttonMenu= document.querySelector("#idAgregarMenu");
-const buttonTitulo= document.querySelector("#idAgregarTitulo");
-const buttonParrafo= document.querySelector("#idAgregarParrafo");
+const buttonMenu = document.querySelector("#idAgregarMenu");
+const buttonTitulo = document.querySelector("#idAgregarTitulo");
+const buttonParrafo = document.querySelector("#idAgregarParrafo");
 
 const pagina = document.querySelector("#idPagina");
 
-buttonAgregarPagina.onclick = function (){
-    const contenedorVerificando= document.querySelector("#idDivPage");
+buttonAgregarPagina.onclick = function () {
+    const contenedorVerificando = document.querySelector("#idDivPage");
 
-    if (!contenedorVerificando){
+    if (!contenedorVerificando) {
         //Creando el contenedor de la pagina
-        const contendor=document.createElement("div");
-        contendor.setAttribute("id", "idDivPage");
-        contendor.setAttribute("class", "container");
-        contendor.setAttribute(
+        const contenedor = document.createElement("div");
+        contenedor.setAttribute("id", "idDivPage");
+        contenedor.setAttribute("class", "container");
+        contenedor.setAttribute(
             "style",
-            "border: solid 1 px black; height:500px; overflow: scroll; overflow-x: hidden;"
+            "border: solid 1px black; height:500px; overflow: scroll; overflow-x: hidden;"
         );
         pagina.appendChild(contenedor);
 
@@ -26,6 +25,28 @@ buttonAgregarPagina.onclick = function (){
 }
 
 
+buttonMenu.onclick = function(){
+    //verificando que exista el contenedor de la pagina
+    const contenedor = document.querySelector("#idDivPage");
+
+    if (contenedor){
+        //Verificando que exista el menu
+        const menuVerificar = document.querySelector("#idDivPage > header");
+
+        if (!menuVerificar){
+            //Clonando el menu principal de nuestra pagina
+            //Para luego crearlo en la nueva pagina
+            const menu = document.querySelector("header").cloneNode(true);
+            contenedor.appendChild(menu);
+
+        } else {
+            alert("Ya ha sido agregado el menu")
+
+        }
+    } else {
+        alert("Primero debe agregar un contenedor de pagina")
+    }
+}
 
 
 buttonTitulo.onclick = function () {
@@ -45,6 +66,37 @@ buttonTitulo.onclick = function () {
             } else {
                 alert(
                     "No se ha registrado ningun titulo, por favor ingrese información"
+                );
+            }
+        } else {
+            alert("Debe agregar un menu primero");
+        }
+    } else {
+        alert("Primero debe agregar un contendor de pagina");
+    }
+};
+
+buttonParrafo.onclick = function () {
+    //verificando que exista el contenedor de la pagina
+    const contenedor = document.querySelector("#idDivPage");
+    // Verificando que exista el menu
+    const menu = document.querySelectorAll("#idDivPage > header");
+
+    if (contenedor) {
+        if (menu.length > 0) {
+            let texto = prompt("Agregue un parrafo a su pagina web");
+
+            if (texto != "" && texto != null) {
+                const parrafo = document.createElement("p");
+                // Agregando clases de Bootstrap
+                parrafo.setAttribute("class", "lead mb-4 py-4");
+                parrafo.innerHTML = texto;
+                // Creando parrafo como hijo del contenedor
+
+                contenedor.appendChild(parrafo);
+            } else {
+                alert(
+                    "No se ha registrado ningun parrafo, por favor ingrese informacion"
                 );
             }
         } else {
