@@ -46,13 +46,13 @@
                         <div class="col">
                             <div class="mb-3">
                                 <label for="idNombre" class="form-label fw-bold">Nombres</label>
-                                <input type="text" class="form-control" id="idNombre">
+                                <input type="text" class="form-control" id="idNombre" name="nombre">
                             </div>
                         </div>
                         <div class="col">
                             <div class="mb-3">
                                 <label for="idApellidos" class="form-label fw-bold">Apellidos</label>
-                                <input type="text" class="form-control" id="idApellidos">
+                                <input type="text" class="form-control" id="idApellidos" name="apellidos">
                             </div>
                         </div>
                     </div>
@@ -60,13 +60,13 @@
                         <div class="col">
                             <div class="mb-3">
                                 <label for="idFechaNac" class="form-label fw-bold">Fecha nacimiento</label>
-                                <input type="date" class="form-control" id="idFechaNac">
+                                <input type="date" class="form-control" id="idFechaNac" name="fechaNacimiento">
                             </div>
                         </div>
                         <div class="col">
                             <div class="mb-3">
                                 <label for="idCorreo" class="form-label fw-bold">Correo electrónico</label>
-                                <input type="email" class="form-control" id="idCorreo"
+                                <input type="email" class="form-control" id="idCorreo" name="email"
                                     aria-describedby="idCorreoSugerencia">
                                 <div id="idCorreoSugerencia" class="form-text">
                                     Nunca compartiremos su correo electrónico con nadie más.
@@ -78,13 +78,13 @@
                         <div class="col">
                             <div class="mb-3">
                                 <label for="idPassword" class="form-label fw-bold">Contraseña</label>
-                                <input type="password" class="form-control" id="idPassword">
+                                <input type="password" class="form-control" id="idPassword" name="password">
                             </div>
                         </div>
                         <div class="col">
                             <div class="mb-3">
                                 <label for="idPasswordRepetir" class="form-label fw-bold">Repetir Contraseña</label>
-                                <input type="password" class="form-control" id="idPasswordRepetir">
+                                <input type="password" class="form-control" id="idPasswordRepetir" name="repetirPassword">
                             </div>
                         </div>
                     </div>
@@ -95,19 +95,19 @@
                                 <span class="fw-bold">Seleccione algunos interes</span>
                             </div>
                             <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="idCkProgramacion">
+                                <input type="checkbox" class="form-check-input" id="idCkProgramacion" name="intereses" value="Programación">
                                 <label class="form-check-label" for="idCkProgramacion">Programacion</label>
                             </div>
                             <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="idCkBD">
+                                <input type="checkbox" class="form-check-input" id="idCkBD" name="intereses" value="Base de Datos">
                                 <label class="form-check-label" for="idCkBD">Base de Datos</label>
                             </div>
                             <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="idCkRedes">
+                                <input type="checkbox" class="form-check-input" id="idCkRedes"  name="intereses" value="Inteligencia Artificial">
                                 <label class="form-check-label" for="idCkRedes">Inteligencia artificial</label>
                             </div>
                             <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="idCkSeguridad">
+                                <input type="checkbox" class="form-check-input" id="idCkSeguridad" name="intereses" value="Seguridad Informática">
                                 <label class="form-check-label" for="idCkSeguridad">Seguridad informatica</label>
                             </div>
                         </div>
@@ -116,19 +116,19 @@
                                 <span class="fw-bold">¿Que carrera estudia?</span>
                             </div>
                             <div class="mb-3 form-check">
-                                <input type="radio" class="form-check-input" name="idRdCarrera" id="idRdIng">
+                                <input type="radio" class="form-check-input" name="carrera" id="idRdIng" value="Ingeniería de Software">
                                 <label class="form-check-label" for="idRdIng">Ingeniería de Software y Negocios Digitales</label>
                             </div>
                             <div class="mb-3 form-check">
-                                <input type="radio" class="form-check-input" name="idRdCarrera" id="idRdLic">
+                                <input type="radio" class="form-check-input" name="carrera" id="idRdLic" value="Licenciatura en Economía">
                                 <label class="form-check-label" for="idRdLic">Licenciatura en Economía y Negocios</label>
                             </div>
                             <div class="mb-3 form-check">
-                                <input type="radio" class="form-check-input" name="idRdCarrera" id="idRdTec">
+                                <input type="radio" class="form-check-input" name="carrera" id="idRdTec" value="Ingeniería de Negocios">
                                 <label class="form-check-label" for="idRdTec">Ingeniería de Negocios</label>
                             </div>
                             <div class="mb-3 form-check">
-                                <input type="radio" class="form-check-input" name="idRdCarrera" id="idRdOtro">
+                                <input type="radio" class="form-check-input" name="carrera" id="idRdOtro" value="Otra">
                                 <label class="form-check-label" for="idRdOtro">Otra</label>
                             </div>
                         </div>
@@ -137,8 +137,8 @@
                         <div class="col">
                             <div class="mb-3">
                                 <label for="idCmPais" class="form-label fw-bold">País de origen</label>
-                                <select class="form-select" id="idCmPais">
-                                    <option selected>Seleccione una opcion</option>
+                                <select class="form-select" id="idCmPais" name="pais">
+                                    <option value="" selected>Seleccione una opcion</option>
                                     <option value="1">EL Salvador</option>
                                     <option value="2">Guatemala</option>
                                     <option value="3">Honduras</option>
@@ -154,7 +154,7 @@
                             <div class="mb-3">
                                 <label for="idArchivo" class="form-label fw-bold">Seleccione la imagen de su
                                     avatar</label>
-                                <input class="form-control" type="file" id="idArchivo">
+                                <input class="form-control" type="file" id="idArchivo" name="avatar">
                             </div>
                         </div>
                     </div>
@@ -169,7 +169,9 @@
             </div>
         </div>
     </div>
-    <!-- COMPONENTE MODAL DE BOOTSTRAP-->
+   
+
+    
     <div class="modal fade" id="idModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">

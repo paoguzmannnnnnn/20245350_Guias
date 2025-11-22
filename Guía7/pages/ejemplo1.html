@@ -46,6 +46,8 @@
                         aria-label="Seleccione el elemento a crear">
                         <option value="" selected>Seleccione un elemento</option>
                         <option value="text"> &lt;input type="text" /&gt;</option>
+                        <option value="email">&lt;input type="email" /&gt;</option>
+                        <option value="color">&lt;input type="color" /&gt;</option>
                         <option value="number"> &lt;input type="number" /&gt;</option>
                         <option value="date"> &lt;input type="date" /&gt;</option>
                         <option value="password"> &lt;input type="password" /&gt;</option>
@@ -56,20 +58,27 @@
                     </select>
 
                     <button type="button" id="idBtnCrear" class="btn btn-primary d-inline">Crear elemento</button>
+                    
+
                 </div>
             </form>
         </div>
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h2 class="fw-bold">Elementos agregados al nuevo formulario</h2>
-            </div>
-            <div class="col"></div>
-            <div class="col">                
-                <form id="idNewForm" class="row g-0"></form>
-            </div>
-            <div class="col"></div>
+        
+            <div class="row align-items-start">
+      <div class="col"></div>
+      <div class="col">
+        <h2 class="fw-bold text-center">Elementos agregados al nuevo formulario</h2>
+        <form id="idNewForm" class="row g-0"></form>
+
+        <div class="text-center mt-3">
+          <button type="button" id="idBtnValidarForm" class="btn btn-success">
+            Validar nuevos datos
+          </button>
         </div>
+      </div>
+      <div class="col"></div>
     </div>
+  </div>
 
     <!-- COMPONENTE MODAL DE BOOTSTRAP-->
     <div class="modal fade" id="idModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
@@ -98,7 +107,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" id="idBtnAddElement" data-bs-dismiss="modal">
+                    <button type="button" class="btn btn-primary" id="idBtnCrearElemento" data-bs-dismiss="modal">
                         <i class="bi bi-plus-circle"></i> Agregar
                     </button>
                 </div>
